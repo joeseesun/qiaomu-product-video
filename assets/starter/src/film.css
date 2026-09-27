@@ -1,0 +1,61 @@
+/* Film tokens. Replace with values from evidence/style-audit.md (repo style) — do not keep these by default. */
+:root {
+  --bg: #0d0e10;
+  --surface: #17181b;
+  --fg: #f4f4f5;
+  --muted: #9a9ba1;
+  --line: #2a2b30;
+  --accent: #7c8cff;
+  --font-en: "Inter", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  --font-zh: "PingFang SC", "Noto Sans SC", "Source Han Sans SC", "Microsoft YaHei", sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", Menlo, monospace;
+}
+
+html, body { margin: 0; background: #000; }
+#stage { position: relative; overflow: hidden; background: var(--bg); color: var(--fg); font-family: var(--font-zh); }
+.shot { position: absolute; inset: 0; overflow: hidden; }
+.film-scrubber { position: fixed; left: 0; right: 0; bottom: 0; width: 100%; z-index: 9; }
+
+/* bilingual headline — English and Chinese always carry their own fonts */
+.headline { display: flex; flex-direction: column; gap: calc(14 * var(--u)); }
+.hl-en { font-family: var(--font-en); font-size: calc(40 * var(--u)); font-weight: 500; letter-spacing: -0.01em; color: var(--muted); }
+.hl-zh { font-family: var(--font-zh); font-size: calc(72 * var(--u)); font-weight: 700; letter-spacing: 0.01em; line-height: 1.15; }
+.hl-desc { font-family: var(--font-zh); font-size: calc(34 * var(--u)); line-height: 1.5; color: var(--muted); margin: 0; max-width: calc(760 * var(--u)); }
+.ch { display: inline-block; will-change: transform, opacity, filter; }
+
+/* camera rig */
+.camera { position: absolute; left: 0; top: 0; transform-origin: 0 0; will-change: transform; }
+
+/* cursor */
+.film-cursor { position: absolute; left: 0; top: 0; width: 36px; height: 36px; z-index: 5; pointer-events: none; }
+.film-cursor svg { position: absolute; left: -4px; top: -2px; filter: drop-shadow(0 2px 4px rgba(0,0,0,.4)); }
+.film-ripple { position: absolute; left: -18px; top: -18px; width: 36px; height: 36px; border-radius: 50%;
+  border: 3px solid var(--accent); opacity: 0; }
+
+/* focus mask: box-shadow cut-out; --dim animates 0..1 */
+.film-focus { position: absolute; inset: 0; pointer-events: none; z-index: 4; --dim: 0; }
+.film-focus-hole { position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, calc(var(--dim) * 0.85)); border-radius: 14px; }
+
+/* device frames */
+.dev-window { position: relative; background: var(--surface); border: 1px solid var(--line); border-radius: calc(18 * var(--u)); overflow: hidden;
+  box-shadow: 0 calc(40 * var(--u)) calc(120 * var(--u)) rgba(0,0,0,.45); }
+.dev-body { position: relative; }
+.dev-bar { height: calc(44 * var(--u)); display: flex; align-items: center; gap: calc(8 * var(--u)); padding: 0 calc(16 * var(--u));
+  border-bottom: 1px solid var(--line); }
+.dev-bar i { width: calc(12 * var(--u)); height: calc(12 * var(--u)); border-radius: 50%; background: var(--line); }
+.dev-title { margin-left: calc(12 * var(--u)); font: calc(18 * var(--u)) var(--font-en); color: var(--muted); }
+.dev-phone { width: calc(420 * var(--u)); height: calc(880 * var(--u)); border-radius: calc(64 * var(--u)); padding: calc(14 * var(--u));
+  background: #111; box-shadow: 0 0 0 2px #2c2c2e, 0 calc(40 * var(--u)) calc(100 * var(--u)) rgba(0,0,0,.5); }
+.dev-screen { width: 100%; height: 100%; border-radius: calc(50 * var(--u)); overflow: hidden; background: var(--bg); }
+
+/* terminal replay */
+.term { background: #0b0b0c; border: 1px solid #26272b; border-radius: calc(16 * var(--u)); overflow: hidden; }
+.term-bar { height: calc(40 * var(--u)); display: flex; align-items: center; gap: calc(8 * var(--u)); padding: 0 calc(14 * var(--u)); background: #141416; }
+.term-bar i { width: calc(11 * var(--u)); height: calc(11 * var(--u)); border-radius: 50%; background: #333; }
+.term-bar span { margin-left: calc(10 * var(--u)); font: calc(16 * var(--u)) var(--font-mono); color: #777; }
+.term-body { margin: 0; padding: calc(24 * var(--u)); font: calc(26 * var(--u))/1.45 var(--font-mono); color: #e5e5e5; white-space: pre-wrap; }
+.term-caret { color: var(--accent); }
+
+/* placeholders must never reach a final render (render.mjs refuses) */
+[data-film-placeholder] { outline: 2px dashed #f59e0b; outline-offset: 6px; }

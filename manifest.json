@@ -1,0 +1,42 @@
+{
+  "name": "qiaomu-product-video",
+  "version": "1.3.0",
+  "owner": "向阳乔木",
+  "updated_at": "2026-09-27",
+  "status": "active",
+  "maturity_tier": "production",
+  "lifecycle_stage": "production",
+  "context_budget_tier": "production",
+  "review_cadence": "after every 3 films or quarterly",
+  "license": "MIT",
+  "upstream_inspiration": "https://github.com/op7418/guizang-product-video-skill",
+  "upstream_sync": {
+    "reviewed_at": "2026-09-25",
+    "upstream_license": "AGPL-3.0 (+ BUSL-1.1 fallback assets)",
+    "policy": "clean-room semantic adoption of methodology; no upstream code, assets, starter, fonts, SFX or fallback style copied"
+  },
+  "qiaomu_defaults": {
+    "copyright": "Copyright (c) 向阳乔木",
+    "x": "https://x.com/vista8",
+    "github": "https://github.com/joeseesun/"
+  },
+  "factory_components": [
+    "references",
+    "scripts",
+    "tests",
+    "evals",
+    "reports"
+  ],
+  "release_gates": [
+    "creation_handoff",
+    "export_skill_ir",
+    "prior_art_research",
+    "quality_rubric",
+    "readme_product_page",
+    "strategy_gate",
+    "trigger_eval",
+    "unit_tests",
+    "upstream_license_clean_room",
+    "validate_skill"
+  ]
+}

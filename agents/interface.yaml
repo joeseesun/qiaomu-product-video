@@ -1,0 +1,27 @@
+interface:
+  display_name: "乔木产品视频"
+  short_description: "从代码仓库和真实组件做软件宣传片、版本更新片"
+  default_prompt: "Use $qiaomu-product-video to make a software product promo or release-update video from a real repository. Lock scope and ad strategy with me (or take the quick path from a one-line request, still showing a one-page strategy + per-second storyboard first), collect feature evidence, write DIRECTION.md with a banned-effects list, mount real product components in the bundled seek-safe render project, measure the beat grid of any supplied song, score and mix sound with measured SFX alignment, probe frames before a motion-blurred final render, review contact sheets and the scorecard, and deliver with an honest note on what was checked, seen, heard, iterations, cost, and what is still unverified."
+  examples:
+    - "用这个仓库给 v0.11 做一支 45 秒的更新宣传片"
+    - "给我的 App 最近一个月的新功能做个 changelog 视频，横版中文"
+    - "Make a release video for this repo's latest version using the real UI components"
+    - "先给我三个视觉方向和几张静帧，再做产品宣传片"
+    - "上一支片子节奏卡、字太小，按方向文件重新改一版"
+    - "用这首歌给我的 App 做一支卡点宣传片"
+compatibility:
+  canonical_format: "agent-skills"
+  adapter_targets: ["claude", "openai", "generic", "agent-skills-compatible"]
+  execution:
+    context: "inline"
+    shell: "bash"
+  dependencies:
+    required: ["python3>=3.9", "ffmpeg", "ffprobe", "node>=20", "chromium"]
+    render_engine: "bundled assets/starter (GSAP + Playwright frame export); existing Remotion projects are kept"
+    companions: ["hyperframes", "hyperframes-core", "hyperframes-animation", "hyperframes-audio", "media-use"]
+  permissions:
+    network: "only for installing render dependencies or fetching licensed audio the user approves"
+    file_write: "the separate video project directory only; never the product repository"
+    subprocess: "ffmpeg/ffprobe, node/npm for the render project, bundled Python scripts"
+  trust:
+    secrets: "never copy .env, tokens, real conversations or customer data into fixtures"

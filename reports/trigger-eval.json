@@ -1,0 +1,384 @@
+{
+  "ok": true,
+  "threshold": 0.75,
+  "description_concepts": [
+    "craft",
+    "make_action",
+    "software_product",
+    "video"
+  ],
+  "missing_description_concepts": [],
+  "summary": {
+    "total": 26,
+    "passed": 26,
+    "false_positive": 0,
+    "false_negative": 0,
+    "pass_rate": 1.0
+  },
+  "failures": [],
+  "results": {
+    "should_trigger": [
+      {
+        "prompt": "用这个仓库给 v0.11 做一支 45 秒的更新宣传片",
+        "family": "cn_repo_release",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "craft",
+          "make_action",
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "给我的 App 最近一个月的新功能做个 changelog 视频，横版中文",
+        "family": "cn_changelog",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "craft",
+          "make_action",
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "先给我三个视觉方向和几张静帧，再做产品宣传片",
+        "family": "cn_direction_first",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "craft",
+          "make_action",
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "上一支产品视频节奏卡、字太小，按方向文件重新改一版",
+        "family": "cn_revise_existing",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "craft",
+          "make_action",
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "Make a release video for this repo's latest version using the real UI components",
+        "family": "en_repo_release",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "craft",
+          "make_action",
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "Create a 60 second product promo video from our codebase with original music and sound effects",
+        "family": "en_promo_audio",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "craft",
+          "make_action",
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "用真实组件给我们软件的新版本制作一个功能演示视频",
+        "family": "cn_feature_demo",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "craft",
+          "make_action",
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "帮我把这次 release notes 做成 30 秒竖版视频，要有配乐和音效",
+        "family": "cn_release_notes_vertical",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "craft",
+          "make_action",
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "给新功能做一支 15 秒的竖版产品广告，投小红书",
+        "family": "cn_short_ad_vertical",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "craft",
+          "make_action",
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "Make a 15 second product ad for our app's new feature, vertical and readable with sound off",
+        "family": "en_short_ad",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "craft",
+          "make_action",
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "把这支更新片再出一个官网首页用的无缝循环版本",
+        "family": "cn_loop_deliverable",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "craft",
+          "make_action",
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "用这首歌给我的 App 做一支卡点宣传片",
+        "family": "cn_user_music_beat_sync",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "make_action",
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "make a modern slick and punchy launch video for my startup's product repo",
+        "family": "en_one_line_launch",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "make_action",
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "给这个产品做一个 UI 形态变换的无缝循环动效视频，放官网首页",
+        "family": "cn_ui_morph_loop",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "craft",
+          "make_action",
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": null
+      }
+    ],
+    "should_not_trigger": [
+      {
+        "prompt": "帮我写一个产品宣传片的口播稿",
+        "family": "script_only",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.5,
+        "matched_concepts": [
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": "口播稿"
+      },
+      {
+        "prompt": "把这篇文章做成知识讲解视频",
+        "family": "explainer_from_article",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.5,
+        "matched_concepts": [
+          "make_action",
+          "video"
+        ],
+        "negative_pattern": "文章"
+      },
+      {
+        "prompt": "把这段已有素材剪一下，加字幕",
+        "family": "edit_footage",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": "已有素材"
+      },
+      {
+        "prompt": "只有官网链接，没有代码，帮我做个产品宣传视频",
+        "family": "url_only_promo",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.75,
+        "matched_concepts": [
+          "make_action",
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": "只有官网"
+      },
+      {
+        "prompt": "下载这个 YouTube 视频",
+        "family": "download",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "video"
+        ],
+        "negative_pattern": "youtube"
+      },
+      {
+        "prompt": "写一份这个版本的 release notes",
+        "family": "text_release_notes",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "software_product"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "帮我写几条产品广告文案",
+        "family": "ad_copy_only",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.5,
+        "matched_concepts": [
+          "software_product",
+          "video"
+        ],
+        "negative_pattern": "广告文案"
+      },
+      {
+        "prompt": "帮我用 JS 做一个讲解 Transformer 原理的科普动画",
+        "family": "concept_explainer_no_product",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "make_action"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "把我这条口播视频改成线稿动画 B-roll",
+        "family": "edit_existing_footage",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.5,
+        "matched_concepts": [
+          "make_action",
+          "video"
+        ],
+        "negative_pattern": null
+      }
+    ],
+    "near_neighbor": [
+      {
+        "prompt": "给这个产品做一张封面图",
+        "family": "cover_only",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.5,
+        "matched_concepts": [
+          "make_action",
+          "software_product"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "帮我分析这个仓库最近更新了什么",
+        "family": "repo_analysis_only",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "software_product"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "推荐几首适合宣传片的背景音乐",
+        "family": "music_recommendation",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.25,
+        "matched_concepts": [
+          "video"
+        ],
+        "negative_pattern": null
+      }
+    ]
+  }
+}

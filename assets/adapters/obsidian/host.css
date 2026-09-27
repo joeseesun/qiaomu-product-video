@@ -1,0 +1,90 @@
+/* Obsidian host chrome (reconstruction of the default light theme for filming a real plugin).
+   Only the host is rebuilt; the plugin renders with its own styles.css.
+   Theme variables live on :root because plugins attach popups to <body>, like in Obsidian. */
+:root, .qfilm-host {
+  --background-primary:#ffffff; --background-primary-alt:#fafafa; --background-secondary:#f6f6f6; --background-secondary-alt:#fcfcfc;
+  --background-modifier-border:#e0e0e0; --background-modifier-border-hover:#d4d4d4; --background-modifier-hover:rgba(0,0,0,.067);
+  --background-modifier-active-hover:rgba(0,0,0,.09); --background-modifier-form-field:#fff; --background-modifier-error:#e93147;
+  --text-normal:#222222; --text-muted:#5c5c5c; --text-faint:#ababab; --text-on-accent:#fff; --text-selection:rgba(0,0,0,.1); --text-error:#e93147;
+  --interactive-normal:#fff; --interactive-hover:#f2f3f5; --interactive-accent:var(--qfilm-accent,#8a5cf5); --interactive-accent-hover:var(--qfilm-accent,#7a4ee5);
+  --font-interface:-apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  --font-text:var(--font-interface); --font-monospace:"SF Mono", Menlo, monospace;
+  --font-ui-smaller:12px; --font-ui-small:13px; --font-ui-medium:15px; --font-ui-large:20px; --font-text-size:16px;
+  --h1-size:1.618em; --h2-size:1.462em; --radius-s:4px; --radius-m:8px; --radius-l:12px; --icon-size:18px; --icon-stroke:1.75px;
+  --shadow-s:0 1px 2px rgba(0,0,0,.028),0 3.4px 6.7px rgba(0,0,0,.042),0 15px 30px rgba(0,0,0,.07);
+  --shadow-l:0 1.8px 7.3px rgba(0,0,0,.071),0 6.3px 24.7px rgba(0,0,0,.112),0 30px 90px rgba(0,0,0,.2);
+  --layer-modal:50; --layer-menu:65; --layer-notice:60; --safe-area-inset-top:0px; --safe-area-inset-bottom:0px;
+}
+body { font-family:var(--font-interface); color:var(--text-normal); -webkit-font-smoothing:antialiased; }
+.qfilm-host {
+  position:absolute; left:0; top:0; display:flex; flex-direction:column; overflow:hidden; background:var(--background-secondary);
+  font-family:var(--font-interface); font-size:var(--font-ui-medium); color:var(--text-normal); -webkit-font-smoothing:antialiased;
+}
+*, *::before, *::after { box-sizing:border-box; }
+svg.svg-icon { width:var(--icon-size); height:var(--icon-size); stroke-width:var(--icon-stroke); }
+button { font-family:inherit; font-size:var(--font-ui-small); color:var(--text-normal); background:var(--interactive-normal); border:0; border-radius:var(--radius-s);
+  box-shadow:0 0 0 1px var(--background-modifier-border); padding:4px 12px; height:30px; display:inline-flex; align-items:center; justify-content:center; gap:6px; cursor:pointer; }
+input, select, textarea { font-family:inherit; font-size:var(--font-ui-small); color:var(--text-normal); background:var(--background-modifier-form-field);
+  border:1px solid var(--background-modifier-border); border-radius:var(--radius-s); padding:4px 8px; height:30px; }
+select { appearance:none; -webkit-appearance:none; padding-right:24px; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat; background-position:right 8px center; }
+  .clickable-icon { display:inline-flex; align-items:center; justify-content:center; padding:4px 6px; border-radius:var(--radius-s); color:var(--text-muted); background:transparent; box-shadow:none; height:auto; cursor:pointer; }
+  .clickable-icon:hover { background:var(--background-modifier-hover); color:var(--text-normal); }
+::selection { background:var(--text-selection); }
+
+/* workspace shell */
+.qfilm-titlebar { height:40px; flex:0 0 40px; display:flex; align-items:stretch; background:var(--background-secondary); border-bottom:1px solid var(--background-modifier-border); }
+.qfilm-traffic { width:84px; flex:0 0 84px; display:flex; align-items:center; gap:8px; padding-left:14px; }
+.qfilm-traffic i { width:12px; height:12px; border-radius:50%; background:#dcdcdc; }
+.qfilm-tabs { flex:1; display:flex; align-items:flex-end; gap:2px; padding:0 8px; min-width:0; }
+.qfilm-tabgroup { flex:1; display:flex; align-items:flex-end; min-width:0; }
+.qfilm-tabgroup + .qfilm-tabgroup { border-left:1px solid var(--background-modifier-border); padding-left:8px; }
+.qfilm-tab { display:flex; align-items:center; gap:8px; height:32px; padding:0 14px; max-width:240px; font-size:var(--font-ui-small); color:var(--text-muted); border-radius:8px 8px 0 0; }
+.qfilm-tab.is-active { background:var(--background-primary); color:var(--text-normal); box-shadow:0 0 0 1px var(--background-modifier-border); clip-path:inset(-2px -2px 0 -2px); }
+.qfilm-tab svg { width:15px; height:15px; }
+.qfilm-body { flex:1; display:flex; min-height:0; }
+.qfilm-ribbon { width:44px; flex:0 0 44px; display:flex; flex-direction:column; align-items:center; gap:6px; padding-top:10px; background:var(--background-secondary); border-right:1px solid var(--background-modifier-border); }
+.qfilm-ribbon .clickable-icon svg { width:18px; height:18px; }
+.qfilm-panes { flex:1; display:flex; min-width:0; background:var(--background-primary); }
+.qfilm-pane { flex:1; min-width:0; position:relative; display:flex; flex-direction:column; }
+.qfilm-pane[data-pane=split] { flex:0 0 0; overflow:hidden; border-left:1px solid var(--background-modifier-border); }
+.qfilm-pane[data-pane=split].is-open { flex-basis:var(--qfilm-split, 38%); }
+.qfilm-pane > .workspace-leaf { flex:1; min-height:0; display:flex; flex-direction:column; }
+.qfilm-pane > .workspace-leaf:not(:last-child) { display:none; }
+.workspace-leaf-content { flex:1; min-height:0; display:flex; flex-direction:column; }
+.workspace-leaf-content > .view-header { display:none; }
+.view-content { flex:1; min-height:0; overflow:auto; position:relative; }
+
+/* markdown note (Live Preview look) */
+.qfilm-note { padding:36px 48px 60px; font-size:var(--font-text-size); line-height:1.7; color:var(--text-normal); }
+.qfilm-note .inline-title { font-size:var(--h1-size); font-weight:700; line-height:1.25; margin:8px 0 22px; letter-spacing:-.01em; }
+.qfilm-note p { margin:0 0 16px; }
+.qfilm-note a { color:var(--interactive-accent); text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:3px; }
+.qfilm-note a.external-link::after { content:''; display:inline-block; width:.8em; height:.8em; margin-left:2px; vertical-align:-1px;
+  background:currentColor; -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2'%3E%3Cpath d='M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'/%3E%3C/svg%3E") center/contain no-repeat; }
+.qfilm-note blockquote { margin:0 0 16px; padding-left:16px; border-left:3px solid var(--interactive-accent); color:var(--text-normal); }
+
+/* menus, modals, notices (Obsidian base classes) */
+.qfilm-host .menu { position:absolute; z-index:var(--layer-menu); min-width:200px; padding:6px; background:var(--background-primary); border:1px solid var(--background-modifier-border); border-radius:var(--radius-m); box-shadow:var(--shadow-s); font-size:var(--font-ui-small); }
+.qfilm-host .menu-item { display:flex; align-items:center; gap:10px; padding:6px 10px; border-radius:var(--radius-s); color:var(--text-normal); }
+.qfilm-host .menu-item:hover { background:var(--background-modifier-hover); }
+.qfilm-host .menu-item-icon { display:flex; color:var(--text-muted); } .qfilm-host .menu-item-icon svg { width:16px; height:16px; }
+.qfilm-host .menu-separator { height:1px; margin:6px -6px; background:var(--background-modifier-border); }
+.qfilm-host .modal-container { position:absolute; inset:0; z-index:var(--layer-modal); display:flex; align-items:center; justify-content:center; }
+.qfilm-host .modal-bg { position:absolute; inset:0; background:rgba(0,0,0,.35); }
+.qfilm-host .modal { position:relative; background:var(--background-primary); border:1px solid var(--background-modifier-border); border-radius:var(--radius-l); box-shadow:var(--shadow-l); padding:20px 24px; max-width:90%; max-height:90%; overflow:auto; }
+.qfilm-host .modal-close-button { position:absolute; right:14px; top:14px; width:24px; height:24px; }
+.qfilm-host .modal-title { font-size:var(--font-ui-large); font-weight:700; margin-bottom:12px; }
+.qfilm-host .notice-container { position:absolute; top:52px; right:16px; z-index:var(--layer-notice); display:flex; flex-direction:column; gap:8px; align-items:flex-end; }
+.qfilm-host .notice { background:#1e1e1e; color:#fafafa; padding:10px 16px; border-radius:var(--radius-m); font-size:var(--font-ui-small); box-shadow:var(--shadow-s); max-width:360px; }
+.qfilm-host .suggestion-item { padding:8px 12px; border-radius:var(--radius-s); }
+
+/* portrait window (9:16 deliverables): horizontal split — reader above, note below */
+.qfilm-host[data-layout=portrait] .qfilm-panes { flex-direction: column; }
+.qfilm-host[data-layout=portrait] .qfilm-pane[data-pane=split] { border-left: 0; border-top: 1px solid var(--background-modifier-border); }
+.qfilm-host[data-layout=portrait] .qfilm-pane[data-pane=split].is-open { flex: 0 0 var(--qfilm-split, 44%); }
+.qfilm-host[data-layout=portrait] .qfilm-note { padding: 28px 40px 40px; }
+.qfilm-host[data-layout=portrait] .qfilm-pane { min-height: 0; }
+.qfilm-host[data-layout=portrait] .qfilm-ribbon { display: none; }
+/* film presentation: hold the plugin's selection popup during a scripted drag, reveal on release */
+.qfilm-hold-popup .qrs-selection-popup { visibility: hidden !important; }

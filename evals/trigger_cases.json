@@ -1,0 +1,223 @@
+{
+  "recommended_threshold": 0.75,
+  "description_required_concepts": [
+    "video",
+    "software_product",
+    "make_action",
+    "craft"
+  ],
+  "positive_concepts": {
+    "video": [
+      "视频",
+      "宣传片",
+      "更新片",
+      "片子",
+      "成片",
+      "promo",
+      "promo video",
+      "release video",
+      "changelog video",
+      "launch video",
+      "video",
+      "广告",
+      "广告片",
+      "ad",
+      "ads",
+      "贴片"
+    ],
+    "software_product": [
+      "产品",
+      "app",
+      "软件",
+      "仓库",
+      "repo",
+      "repository",
+      "版本",
+      "新功能",
+      "changelog",
+      "release notes",
+      "release",
+      "更新",
+      "product",
+      "codebase",
+      "source code",
+      "源码",
+      "代码"
+    ],
+    "make_action": [
+      "做",
+      "制作",
+      "make",
+      "create",
+      "build",
+      "改",
+      "重新",
+      "出一支",
+      "生成",
+      "render",
+      "出",
+      "再出",
+      "导出"
+    ],
+    "craft": [
+      "组件",
+      "真实界面",
+      "界面",
+      "静帧",
+      "方向",
+      "镜头",
+      "分镜",
+      "配乐",
+      "音效",
+      "components",
+      "ui",
+      "横版",
+      "竖版",
+      "秒",
+      "direction",
+      "music",
+      "sound effects",
+      "second",
+      "seconds",
+      "循环",
+      "无缝循环",
+      "剪版",
+      "loop",
+      "cutdown",
+      "sound off"
+    ]
+  },
+  "negative_patterns": [
+    "只要脚本",
+    "只写脚本",
+    "口播稿",
+    "逐字稿",
+    "文章",
+    "书籍",
+    "知识讲解",
+    "讲解视频",
+    "explainer",
+    "剪辑已有",
+    "已有素材",
+    "剪一下",
+    "字幕",
+    "只有官网",
+    "没有代码",
+    "website url only",
+    "下载视频",
+    "youtube",
+    "抖音标题",
+    "广告文案",
+    "文案"
+  ],
+  "should_trigger": [
+    {
+      "text": "用这个仓库给 v0.11 做一支 45 秒的更新宣传片",
+      "family": "cn_repo_release"
+    },
+    {
+      "text": "给我的 App 最近一个月的新功能做个 changelog 视频，横版中文",
+      "family": "cn_changelog"
+    },
+    {
+      "text": "先给我三个视觉方向和几张静帧，再做产品宣传片",
+      "family": "cn_direction_first"
+    },
+    {
+      "text": "上一支产品视频节奏卡、字太小，按方向文件重新改一版",
+      "family": "cn_revise_existing"
+    },
+    {
+      "text": "Make a release video for this repo's latest version using the real UI components",
+      "family": "en_repo_release"
+    },
+    {
+      "text": "Create a 60 second product promo video from our codebase with original music and sound effects",
+      "family": "en_promo_audio"
+    },
+    {
+      "text": "用真实组件给我们软件的新版本制作一个功能演示视频",
+      "family": "cn_feature_demo"
+    },
+    {
+      "text": "帮我把这次 release notes 做成 30 秒竖版视频，要有配乐和音效",
+      "family": "cn_release_notes_vertical"
+    },
+    {
+      "text": "给新功能做一支 15 秒的竖版产品广告，投小红书",
+      "family": "cn_short_ad_vertical"
+    },
+    {
+      "text": "Make a 15 second product ad for our app's new feature, vertical and readable with sound off",
+      "family": "en_short_ad"
+    },
+    {
+      "text": "把这支更新片再出一个官网首页用的无缝循环版本",
+      "family": "cn_loop_deliverable"
+    },
+    {
+      "text": "用这首歌给我的 App 做一支卡点宣传片",
+      "family": "cn_user_music_beat_sync"
+    },
+    {
+      "text": "make a modern slick and punchy launch video for my startup's product repo",
+      "family": "en_one_line_launch"
+    },
+    {
+      "text": "给这个产品做一个 UI 形态变换的无缝循环动效视频，放官网首页",
+      "family": "cn_ui_morph_loop"
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "text": "帮我写一个产品宣传片的口播稿",
+      "family": "script_only"
+    },
+    {
+      "text": "把这篇文章做成知识讲解视频",
+      "family": "explainer_from_article"
+    },
+    {
+      "text": "把这段已有素材剪一下，加字幕",
+      "family": "edit_footage"
+    },
+    {
+      "text": "只有官网链接，没有代码，帮我做个产品宣传视频",
+      "family": "url_only_promo"
+    },
+    {
+      "text": "下载这个 YouTube 视频",
+      "family": "download"
+    },
+    {
+      "text": "写一份这个版本的 release notes",
+      "family": "text_release_notes"
+    },
+    {
+      "text": "帮我写几条产品广告文案",
+      "family": "ad_copy_only"
+    },
+    {
+      "text": "帮我用 JS 做一个讲解 Transformer 原理的科普动画",
+      "family": "concept_explainer_no_product"
+    },
+    {
+      "text": "把我这条口播视频改成线稿动画 B-roll",
+      "family": "edit_existing_footage"
+    }
+  ],
+  "near_neighbor": [
+    {
+      "text": "给这个产品做一张封面图",
+      "family": "cover_only"
+    },
+    {
+      "text": "帮我分析这个仓库最近更新了什么",
+      "family": "repo_analysis_only"
+    },
+    {
+      "text": "推荐几首适合宣传片的背景音乐",
+      "family": "music_recommendation"
+    }
+  ]
+}
