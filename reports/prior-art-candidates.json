@@ -1,0 +1,777 @@
+{
+  "ok": false,
+  "complete": false,
+  "researched_at": "2026-09-25",
+  "queries": [
+    "product promo video from code repository",
+    "release notes changelog video",
+    "software launch video real components"
+  ],
+  "metric_semantics": {
+    "skills_sh_installs": "ecosystem install telemetry; not ratings or correctness",
+    "skillsmp_repo_stars": "GitHub repository stars; not installs, ratings, or skill-specific quality",
+    "cross_catalog_score": "not calculated; metrics remain separate"
+  },
+  "query_runs": [
+    {
+      "query": "product promo video from code repository",
+      "skills_sh": "error",
+      "skillsmp": "ok",
+      "skills_sh_error": "skills.sh returned no parseable candidates",
+      "skillsmp_candidates": 5
+    },
+    {
+      "query": "release notes changelog video",
+      "skills_sh": "ok",
+      "skillsmp": "ok",
+      "skills_sh_candidates": 2,
+      "skillsmp_candidates": 10
+    },
+    {
+      "query": "software launch video real components",
+      "skills_sh": "error",
+      "skillsmp": "ok",
+      "skills_sh_error": "skills.sh returned no parseable candidates",
+      "skillsmp_candidates": 10
+    }
+  ],
+  "candidate_family_count": 27,
+  "candidates": [
+    {
+      "family_key": "op7418/guizang-product-video-skill:guizang-product-video-skill",
+      "queries": [
+        "release notes changelog video"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "release notes changelog video",
+        "owner_repo": "op7418/guizang-product-video-skill",
+        "skill_name": "guizang-product-video-skill",
+        "family_key": "op7418/guizang-product-video-skill:guizang-product-video-skill",
+        "skills_sh_installs": 99,
+        "skills_sh_installs_display": "99",
+        "skills_sh_url": "https://skills.sh/op7418/guizang-product-video-skill/guizang-product-video-skill"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "ofoxai/skills:explainer",
+      "queries": [
+        "release notes changelog video"
+      ],
+      "skills_sh": {
+        "source": "skills.sh",
+        "query": "release notes changelog video",
+        "owner_repo": "ofoxai/skills",
+        "skill_name": "explainer",
+        "family_key": "ofoxai/skills:explainer",
+        "skills_sh_installs": 12,
+        "skills_sh_installs_display": "12",
+        "skills_sh_url": "https://skills.sh/ofoxai/skills/explainer"
+      },
+      "skillsmp": null,
+      "catalogs": [
+        "skills.sh"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:diffs",
+      "queries": [
+        "product promo video from code repository"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "diffs",
+        "author": "openclaw",
+        "description": "Use the diffs tool to produce real, shareable diffs (viewer URL, file artifact, or both) instead of manual edit summaries.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/extensions/diffs/skills/diffs",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/extensions-diffs-skills-diffs",
+        "repo_stars": 390183,
+        "catalog_updated_at": "2026-07-29T20:22:10+00:00",
+        "source_key": "openclaw/openclaw:extensions/diffs/skills/diffs",
+        "family_key": "openclaw/openclaw:diffs",
+        "aliases": [],
+        "query": "product promo video from code repository"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:discord-user-post",
+      "queries": [
+        "release notes changelog video"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "discord-user-post",
+        "author": "openclaw",
+        "description": "Post an approved message as the logged-in Discord user through the Discord desktop app. Use for release announcements or other direct user-authored Discord posts; not for OpenClaw channel sends, bots, webhooks, relays, agent sessions, or archive search.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/discord-user-post",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-discord-user-post",
+        "repo_stars": 390183,
+        "catalog_updated_at": "2026-06-15T09:26:30+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/discord-user-post",
+        "family_key": "openclaw/openclaw:discord-user-post",
+        "aliases": [],
+        "query": "release notes changelog video"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:openclaw-changelog-update",
+      "queries": [
+        "release notes changelog video"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "openclaw-changelog-update",
+        "author": "openclaw",
+        "description": "Regenerate OpenClaw release changelog sections from git history before beta, stable, or extended-stable releases.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/openclaw-changelog-update",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-openclaw-changelog-update",
+        "repo_stars": 390183,
+        "catalog_updated_at": "2026-08-31T17:38:47+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/openclaw-changelog-update",
+        "family_key": "openclaw/openclaw:openclaw-changelog-update",
+        "aliases": [],
+        "query": "release notes changelog video"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:openclaw-release-validation",
+      "queries": [
+        "release notes changelog video"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "openclaw-release-validation",
+        "author": "openclaw",
+        "description": "Test the latest OpenClaw main commit through an isolated OCM copy or an explicitly approved in-place gateway update, then guide structured release feedback.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/openclaw-release-validation",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-openclaw-release-validation",
+        "repo_stars": 390183,
+        "catalog_updated_at": "2026-08-31T22:52:58+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/openclaw-release-validation",
+        "family_key": "openclaw/openclaw:openclaw-release-validation",
+        "aliases": [],
+        "query": "release notes changelog video"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:release-openclaw-announcement",
+      "queries": [
+        "release notes changelog video"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "release-openclaw-announcement",
+        "author": "openclaw",
+        "description": "Draft or post OpenClaw beta, stable, or extended-stable Discord release announcements from changelog, tag, registry, and validation evidence. Use when announcing a release, release candidate, or asking what users should test after an OpenClaw release.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/release-openclaw-announcement",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-release-openclaw-announcement",
+        "repo_stars": 390183,
+        "catalog_updated_at": "2026-07-23T01:48:48+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/release-openclaw-announcement",
+        "family_key": "openclaw/openclaw:release-openclaw-announcement",
+        "aliases": [],
+        "query": "release notes changelog video"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:release-openclaw-ci",
+      "queries": [
+        "release notes changelog video"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "release-openclaw-ci",
+        "author": "openclaw",
+        "description": "Run, watch, debug, and summarize OpenClaw full release CI, release checks, live provider gates, install/update proofs, and release-secret preflights.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/release-openclaw-ci",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-release-openclaw-ci",
+        "repo_stars": 390183,
+        "catalog_updated_at": "2026-09-02T01:41:09+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/release-openclaw-ci",
+        "family_key": "openclaw/openclaw:release-openclaw-ci",
+        "aliases": [],
+        "query": "release notes changelog video"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:release-openclaw-mac",
+      "queries": [
+        "release notes changelog video"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "release-openclaw-mac",
+        "author": "openclaw",
+        "description": "Run or recover OpenClaw macOS release signing, notarization, appcast, and asset promotion.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/release-openclaw-mac",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-release-openclaw-mac",
+        "repo_stars": 390183,
+        "catalog_updated_at": "2026-07-23T01:48:48+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/release-openclaw-mac",
+        "family_key": "openclaw/openclaw:release-openclaw-mac",
+        "aliases": [],
+        "query": "release notes changelog video"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:release-openclaw-maintainer",
+      "queries": [
+        "release notes changelog video"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "release-openclaw-maintainer",
+        "author": "openclaw",
+        "description": "Prepare or verify OpenClaw stable, beta, and extended-stable releases, including backport discovery, changelogs, release notes, publish commands, and artifacts.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/release-openclaw-maintainer",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-release-openclaw-maintainer",
+        "repo_stars": 390183,
+        "catalog_updated_at": "2026-09-02T01:41:09+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/release-openclaw-maintainer",
+        "family_key": "openclaw/openclaw:release-openclaw-maintainer",
+        "aliases": [],
+        "query": "release notes changelog video"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:release-openclaw-nightly",
+      "queries": [
+        "release notes changelog video"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "release-openclaw-nightly",
+        "author": "openclaw",
+        "description": "OpenClaw Tideclaw alpha/nightly release automation: isolated branches, local fixes, release CI, branch retention, and forward-port to main.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/release-openclaw-nightly",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-release-openclaw-nightly",
+        "repo_stars": 390183,
+        "catalog_updated_at": "2026-08-13T10:45:36+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/release-openclaw-nightly",
+        "family_key": "openclaw/openclaw:release-openclaw-nightly",
+        "aliases": [],
+        "query": "release notes changelog video"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:release-openclaw-plugin-testing",
+      "queries": [
+        "release notes changelog video"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "release-openclaw-plugin-testing",
+        "author": "openclaw",
+        "description": "Plan and run pre-release OpenClaw plugin validation across bundled plugins, package artifacts, lifecycle commands, doctor/fix, config round-trip, gateway startup, SDK compatibility, Docker E2E, Package Acceptance, and Testbox proof.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/release-openclaw-plugin-testing",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-release-openclaw-plugin-testing",
+        "repo_stars": 390183,
+        "catalog_updated_at": "2026-08-16T15:25:04+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/release-openclaw-plugin-testing",
+        "family_key": "openclaw/openclaw:release-openclaw-plugin-testing",
+        "aliases": [],
+        "query": "release notes changelog video"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openclaw/openclaw:verify-release",
+      "queries": [
+        "release notes changelog video"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "verify-release",
+        "author": "openclaw",
+        "description": "Verify regular or extended-stable OpenClaw releases against the exact publication surfaces, workflow identities, package provenance, smoke tests, and live Gateway behavior expected for that release track.",
+        "content_language": "en",
+        "github_url": "https://github.com/openclaw/openclaw/tree/main/.agents/skills/verify-release",
+        "skillsmp_url": "https://skillsmp.com/creators/openclaw/openclaw/agents-skills-verify-release",
+        "repo_stars": 390183,
+        "catalog_updated_at": "2026-07-23T01:48:48+00:00",
+        "source_key": "openclaw/openclaw:.agents/skills/verify-release",
+        "family_key": "openclaw/openclaw:verify-release",
+        "aliases": [],
+        "query": "release notes changelog video"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:intent-driven-development",
+      "queries": [
+        "product promo video from code repository"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "intent-driven-development",
+        "author": "affaan-m",
+        "description": "Turn ambiguous or high-impact product and engineering changes into scoped, verifiable acceptance criteria before or alongside implementation. Use when a user asks to clarify a feature, define acceptance criteria, de-risk a security/data/migration/integration change, prepare implementation requirements for another agent, or make a complex request testable. Do not trigger for trivial edits, straightforward fixes, active debugging, code review, or implementation requests whose acceptance conditions are already clear unless the user explicitly invokes this skill.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/intent-driven-development",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-intent-driven-development",
+        "repo_stars": 264820,
+        "catalog_updated_at": "2026-06-07T05:26:45+00:00",
+        "source_key": "affaan-m/ecc:skills/intent-driven-development",
+        "family_key": "affaan-m/ecc:intent-driven-development",
+        "aliases": [],
+        "query": "product promo video from code repository"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:manim-video",
+      "queries": [
+        "product promo video from code repository"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "manim-video",
+        "author": "affaan-m",
+        "description": "Build reusable Manim explainers for technical concepts, graphs, system diagrams, and product walkthroughs, then hand off to the wider ECC video stack if needed. Use when the user wants a clean animated explainer rather than a generic talking-head script.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/manim-video",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-manim-video",
+        "repo_stars": 264820,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/manim-video",
+        "family_key": "affaan-m/ecc:manim-video",
+        "aliases": [],
+        "query": "product promo video from code repository"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:ml-adoption-playbook",
+      "queries": [
+        "software launch video real components"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "ml-adoption-playbook",
+        "author": "affaan-m",
+        "description": "End-to-end methodology for AI agents and software engineers to add machine learning algorithms to existing non-ML codebases. Covers problem framing, data readiness, architectural decoupling, and baseline model integration. Use when adding a machine learning capability to a codebase that has none, from problem framing through a baseline model.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/ml-adoption-playbook",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-ml-adoption-playbook",
+        "repo_stars": 264820,
+        "catalog_updated_at": "2026-08-12T03:58:14+00:00",
+        "source_key": "affaan-m/ecc:skills/ml-adoption-playbook",
+        "family_key": "affaan-m/ecc:ml-adoption-playbook",
+        "aliases": [],
+        "query": "software launch video real components"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:product-capability",
+      "queries": [
+        "product promo video from code repository"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "product-capability",
+        "author": "affaan-m",
+        "description": "Translate PRD intent, roadmap asks, or product discussions into an implementation-ready capability plan that exposes constraints, invariants, interfaces, and unresolved decisions before multi-service work starts. Use when the user needs an ECC-native PRD-to-SRS lane instead of vague planning prose.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/product-capability",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-product-capability",
+        "repo_stars": 264820,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/product-capability",
+        "family_key": "affaan-m/ecc:product-capability",
+        "aliases": [
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/product-capability"
+          },
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-CN/skills/product-capability"
+          },
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/product-capability"
+          },
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-CN/skills/product-capability"
+          },
+          {
+            "language": "en",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/.agents/skills/product-capability"
+          }
+        ],
+        "query": "product promo video from code repository"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "affaan-m/ecc:product-lens",
+      "queries": [
+        "product promo video from code repository"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "product-lens",
+        "author": "affaan-m",
+        "description": "Use this skill to validate the \"why\" before building, run product diagnostics, and pressure-test product direction before the request becomes an implementation contract.",
+        "content_language": "en",
+        "github_url": "https://github.com/affaan-m/ECC/tree/main/skills/product-lens",
+        "skillsmp_url": "https://skillsmp.com/creators/affaan-m/ecc/skills-product-lens",
+        "repo_stars": 264820,
+        "catalog_updated_at": "2026-06-11T12:12:21+00:00",
+        "source_key": "affaan-m/ecc:skills/product-lens",
+        "family_key": "affaan-m/ecc:product-lens",
+        "aliases": [
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-CN/skills/product-lens"
+          },
+          {
+            "language": "zh",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/zh-CN/skills/product-lens"
+          },
+          {
+            "language": "ja",
+            "github_url": "https://github.com/affaan-m/ECC/tree/main/docs/ja-JP/skills/product-lens"
+          }
+        ],
+        "query": "product promo video from code repository"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openai/codex:openai-docs",
+      "queries": [
+        "software launch video real components"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "openai-docs",
+        "author": "openai",
+        "description": "Use for Codex models/pricing, scheduled tasks, skills, settings, setup, troubleshooting, customization, automations, and self-knowledge—including 'you,' 'your,' 'this app,' or 'this coding agent' when they refer to Codex—and for OpenAI APIs/products and ChatGPT Work. Also use for model choice/migration, prompting, SDKs, Responses, Realtime, agents, evals, and Chat/Work/Codex comparisons. Do not use for generic app/software tasks that merely mention Codex.",
+        "content_language": "en",
+        "github_url": "https://github.com/openai/codex/tree/main/codex-rs/skills/src/assets/samples/openai-docs",
+        "skillsmp_url": "https://skillsmp.com/creators/openai/codex/codex-rs-skills-src-assets-samples-openai-docs",
+        "repo_stars": 125751,
+        "catalog_updated_at": "2026-09-05T05:21:42+00:00",
+        "source_key": "openai/codex:codex-rs/skills/src/assets/samples/openai-docs",
+        "family_key": "openai/codex:openai-docs",
+        "aliases": [],
+        "query": "software launch video real components"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "nexu-io/open-design:emil-design-eng",
+      "queries": [
+        "software launch video real components"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "emil-design-eng",
+        "author": "nexu-io",
+        "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.",
+        "content_language": "en",
+        "github_url": "https://github.com/nexu-io/open-design/tree/main/skills/emil-design-eng",
+        "skillsmp_url": "https://skillsmp.com/creators/nexu-io/open-design/skills-emil-design-eng",
+        "repo_stars": 97471,
+        "catalog_updated_at": "2026-07-03T03:04:26+00:00",
+        "source_key": "nexu-io/open-design:skills/emil-design-eng",
+        "family_key": "nexu-io/open-design:emil-design-eng",
+        "aliases": [],
+        "query": "software launch video real components"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bytedance/deer-flow:code-documentation",
+      "queries": [
+        "software launch video real components"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "code-documentation",
+        "author": "bytedance",
+        "description": "Use this skill when the user requests to generate, create, or improve documentation for code, APIs, libraries, repositories, or software projects. Supports README generation, API reference documentation, inline code comments, architecture documentation, changelog generation, and developer guides. Trigger on requests like \"document this code\", \"create a README\", \"generate API docs\", \"write developer guide\", or when analyzing codebases for documentation purposes.",
+        "content_language": "en",
+        "github_url": "https://github.com/bytedance/deer-flow/tree/main/skills/public/code-documentation",
+        "skillsmp_url": "https://skillsmp.com/creators/bytedance/deer-flow/skills-public-code-documentation",
+        "repo_stars": 82768,
+        "catalog_updated_at": "2026-04-05T02:19:35+00:00",
+        "source_key": "bytedance/deer-flow:skills/public/code-documentation",
+        "family_key": "bytedance/deer-flow:code-documentation",
+        "aliases": [],
+        "query": "software launch video real components"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bytedance/deer-flow:engineer-system-change",
+      "queries": [
+        "software launch video real components"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "engineer-system-change",
+        "author": "bytedance",
+        "description": "Evaluate and carry out non-trivial software-system changes from first principles. Use when assessing RFCs, issues, designs, features, refactors, migrations, dependency changes, or proposed fields, events, APIs, modules, and services whose need, consumers, system fit, validation, or rollback require scrutiny. Read the actual system, identify the concrete problem and named semantic consumers, choose the smallest sufficient solution, reject pseudo-requirements and speculative abstractions, and require evidence proportional to risk. Do not use for mechanical edits, source-code explanation, or a dedicated review of an already-complete diff.",
+        "content_language": "en",
+        "github_url": "https://github.com/bytedance/deer-flow/tree/main/.agent/skills/engineer-system-change",
+        "skillsmp_url": "https://skillsmp.com/creators/bytedance/deer-flow/agent-skills-engineer-system-change",
+        "repo_stars": 82768,
+        "catalog_updated_at": "2026-07-23T09:37:55+00:00",
+        "source_key": "bytedance/deer-flow:.agent/skills/engineer-system-change",
+        "family_key": "bytedance/deer-flow:engineer-system-change",
+        "aliases": [],
+        "query": "software launch video real components"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "openinterpreter/openinterpreter:openai-docs",
+      "queries": [
+        "software launch video real components"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "openai-docs",
+        "author": "openinterpreter",
+        "description": "Use for Codex models/pricing, scheduled tasks, skills, settings, setup, troubleshooting, customization, automations, and self-knowledge—including 'you,' 'your,' 'this app,' or 'this coding agent' when they refer to Codex—and for OpenAI APIs/products and ChatGPT Work. Also use for model choice/migration, prompting, SDKs, Responses, Realtime, agents, evals, and Chat/Work/Codex comparisons. Do not use for generic app/software tasks that merely mention Codex.",
+        "content_language": "en",
+        "github_url": "https://github.com/openinterpreter/openinterpreter/tree/main/codex-rs/skills/src/assets/samples/openai-docs",
+        "skillsmp_url": "https://skillsmp.com/creators/openinterpreter/openinterpreter/codex-rs-skills-src-assets-samples-openai-docs",
+        "repo_stars": 68398,
+        "catalog_updated_at": "2026-09-13T10:57:58+00:00",
+        "source_key": "openinterpreter/openinterpreter:codex-rs/skills/src/assets/samples/openai-docs",
+        "family_key": "openinterpreter/openinterpreter:openai-docs",
+        "aliases": [],
+        "query": "software launch video real components"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "warpdotdev/warp:factory-files",
+      "queries": [
+        "software launch video real components"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "factory-files",
+        "author": "warpdotdev",
+        "description": "Create and edit file-based Warp software factory definitions, in a repository tree rooted at a factory.yaml. Use when authoring or changing that factory.yaml, Agent, Automation, Scorer, Benchmark, Runner, or Webhook files under that root, or its factory and agent skill trees, and when fixing Factory file diagnostics. Do not use for agent-definition Markdown that belongs to another tool, for a tree with no factory.yaml, or to operate a live factory or hand work to one through Factory MCP.",
+        "content_language": "en",
+        "github_url": "https://github.com/warpdotdev/warp/tree/master/resources/bundled/skills/factory-files",
+        "skillsmp_url": "https://skillsmp.com/creators/warpdotdev/warp/resources-bundled-skills-factory-files",
+        "repo_stars": 65120,
+        "catalog_updated_at": "2026-09-11T18:20:07+00:00",
+        "source_key": "warpdotdev/warp:resources/bundled/skills/factory-files",
+        "family_key": "warpdotdev/warp:factory-files",
+        "aliases": [],
+        "query": "software launch video real components"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "warpdotdev/warp:factory-mcp",
+      "queries": [
+        "software launch video real components"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "factory-mcp",
+        "author": "warpdotdev",
+        "description": "Use the Warp Factory MCP to hand work to a software factory and collaborate with it — bundle local work and send it to the cloud, find factory tasks from a Slack thread / Linear ticket / description, and pull a task down to test or iterate locally and hand it back",
+        "content_language": "en",
+        "github_url": "https://github.com/warpdotdev/warp/tree/master/resources/bundled/skills/factory-mcp",
+        "skillsmp_url": "https://skillsmp.com/creators/warpdotdev/warp/resources-bundled-skills-factory-mcp",
+        "repo_stars": 65120,
+        "catalog_updated_at": "2026-09-05T06:06:07+00:00",
+        "source_key": "warpdotdev/warp:resources/bundled/skills/factory-mcp",
+        "family_key": "warpdotdev/warp:factory-mcp",
+        "aliases": [],
+        "query": "software launch video real components"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "usestrix/strix:owasp-top-10-testing",
+      "queries": [
+        "software launch video real components"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "owasp-top-10-testing",
+        "author": "usestrix",
+        "description": "Test an application against the OWASP Top 10 with Strix — autonomous AI agents that attempt real exploits for each category of the current OWASP Top 10:2025 (broken access control including SSRF, security misconfiguration, software supply chain failures, cryptographic failures, injection, insecure design, authentication failures, integrity failures, logging and alerting failures, mishandling of exceptional conditions) and report only what they could actually prove, mapped back to the category with a proof-of-concept. Also covers the OWASP API Security Top 10 (2023). Use when the user asks for an OWASP Top 10 assessment, OWASP compliance testing, or a security review mapped to OWASP categories.",
+        "content_language": "en",
+        "github_url": "https://github.com/usestrix/strix/tree/main/skills/owasp-top-10-testing",
+        "skillsmp_url": "https://skillsmp.com/creators/usestrix/strix/skills-owasp-top-10-testing",
+        "repo_stars": 63897,
+        "catalog_updated_at": "2026-09-01T22:12:29+00:00",
+        "source_key": "usestrix/strix:skills/owasp-top-10-testing",
+        "family_key": "usestrix/strix:owasp-top-10-testing",
+        "aliases": [],
+        "query": "software launch video real components"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    },
+    {
+      "family_key": "bmad-code-org/bmad-method:bmad-agent-dev",
+      "queries": [
+        "software launch video real components"
+      ],
+      "skills_sh": null,
+      "skillsmp": {
+        "source": "skillsmp",
+        "name": "bmad-agent-dev",
+        "author": "bmad-code-org",
+        "description": "Senior software engineer who implements stories and code changes. Use when the user asks to talk to Amelia or requests the developer agent",
+        "content_language": "en",
+        "github_url": "https://github.com/bmad-code-org/BMAD-METHOD/tree/main/skills/bmad-agent-dev",
+        "skillsmp_url": "https://skillsmp.com/creators/bmad-code-org/bmad-method/skills-bmad-agent-dev",
+        "repo_stars": 53283,
+        "catalog_updated_at": "2026-09-05T11:27:52+00:00",
+        "source_key": "bmad-code-org/bmad-method:skills/bmad-agent-dev",
+        "family_key": "bmad-code-org/bmad-method:bmad-agent-dev",
+        "aliases": [],
+        "query": "software launch video real components"
+      },
+      "catalogs": [
+        "skillsmp"
+      ],
+      "requires_source_review": true
+    }
+  ],
+  "missing_evidence": [
+    "skills.sh `product promo video from code repository`: skills.sh returned no parseable candidates",
+    "skills.sh `software launch video real components`: skills.sh returned no parseable candidates"
+  ],
+  "next_steps": [
+    "shortlist by job relevance and role coverage, not combined popularity",
+    "open canonical GitHub source and inspect SKILL.md before adoption",
+    "verify license, maintenance, permissions, security, duplication, and rating evidence",
+    "write keep/adapt/reject/invent synthesis before authoring"
+  ]
+}

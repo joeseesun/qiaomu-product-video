@@ -1,0 +1,19 @@
+{
+  "name": "qiaomu-film",
+  "private": true,
+  "type": "module",
+  "description": "qiaomu-product-video render project: plan.json-driven, seek-safe HTML film rendered frame by frame.",
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "preview": "node tools/build.mjs && node tools/serve.mjs --open",
+    "stills": "node tools/stills.mjs",
+    "render": "node tools/render.mjs",
+    "cover": "node tools/cover.mjs",
+    "capture": "node tools/capture.mjs"
+  },
+  "dependencies": {
+    "esbuild": "^0.25.0",
+    "gsap": "^3.13.0",
+    "playwright-core": "^1.55.0"
+  }
+}
